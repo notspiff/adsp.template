@@ -121,6 +121,8 @@ unsigned int CDSPProcessor::MasterProcess(float **Array_in, float **Array_out, u
     case channellayout_7_1:
       from_X_to_7_1( Array_in, Array_out, Samples, sourceChannelLayout );
     break;
+    default:
+    break;
   }
 
   return Samples;

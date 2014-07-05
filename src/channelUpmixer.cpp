@@ -195,6 +195,8 @@ void from_X_to_stereo( float **Array_in, float **Array_out, unsigned int Samples
     case channellayout_mono:
       from_mono_to_stereo( Array_in, Array_out, Samples );
     break;
+    default:
+    break;
   }
 }
 
@@ -208,6 +210,8 @@ void from_X_to_2_1( float **Array_in, float **Array_out, unsigned int Samples, A
 
     case channellayout_stereo:
       from_mono_to_2_1( Array_in, Array_out, Samples );
+    break;
+    default:
     break;
   }
 }
@@ -226,6 +230,8 @@ void from_X_to_3_0( float **Array_in, float **Array_out, unsigned int Samples, A
 
     case channellayout_2_1:
       from_2_1_to_3_0( Array_in, Array_out, Samples );
+    break;
+    default:
     break;
   }
 }
@@ -248,6 +254,8 @@ void from_X_to_quad_side( float **Array_in, float **Array_out, unsigned int Samp
 
     case channellayout_3_0:
       from_3_0_to_quad_side( Array_in, Array_out, Samples );
+    break;
+    default:
     break;
   }
 }
@@ -274,6 +282,8 @@ void from_X_to_3_1( float **Array_in, float **Array_out, unsigned int Samples, A
 
     case channellayout_quad_side:
       from_quad_side_to_3_1( Array_in, Array_out, Samples );
+    break;
+    default:
     break;
   }
 }
@@ -304,6 +314,8 @@ void from_X_to_5_0_side( float **Array_in, float **Array_out, unsigned int Sampl
 
     case channellayout_3_1:
       from_3_1_to_5_0_side( Array_in, Array_out, Samples );
+    break;
+    default:
     break;
   }
 }
@@ -338,6 +350,8 @@ void from_X_to_4_1_side( float **Array_in, float **Array_out, unsigned int Sampl
 
     case channellayout_5_0_side:
       from_5_0_side_to_4_1_side( Array_in, Array_out, Samples );
+    break;
+    default:
     break;
   }
 }
@@ -377,6 +391,8 @@ void from_X_to_5_1_side( float **Array_in, float **Array_out, unsigned int Sampl
     case channellayout_4_1_side:
       from_4_1_side_to_5_1_side( Array_in, Array_out, Samples );
     break;
+    default:
+    break;
   }
 }
 
@@ -414,6 +430,8 @@ void from_X_to_7_0( float **Array_in, float **Array_out, unsigned int Samples, A
 
     case channellayout_4_1_side:
       from_5_0_side_to_7_0( Array_in, Array_out, Samples );
+    break;
+    default:
     break;
   }
 }
@@ -456,6 +474,8 @@ void from_X_to_7_1( float **Array_in, float **Array_out, unsigned int Samples, A
 
     case channellayout_7_0:
       from_7_0_to_7_1( Array_in, Array_out, Samples );
+    break;
+    default:
     break;
   }
 }
