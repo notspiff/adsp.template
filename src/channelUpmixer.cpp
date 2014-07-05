@@ -27,7 +27,7 @@
 using namespace std;
 
 //! Array with channel layout as a string.
-static char *channellayout_strings[] =
+static const char *channellayout_strings[] =
 {
   "channellayout_mono",             // FC  (supported from ActiveAE)
   "channellayout_stereo",           // FL, FR  (supported from ActiveAE)
