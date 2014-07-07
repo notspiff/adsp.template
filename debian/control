@@ -1,0 +1,22 @@
+Source: xbmc-audiodsp-template
+Priority: extra
+Maintainer: wsnipex <wsnipex@xbmc.org>
+Build-Depends: debhelper (>= 8.0.0), cmake, xbmc-addon-dev, libxbmcplatform-dev, xbmc-audio-dev, libfftw3-dev, libsamplerate0-dev, doxygen
+Standards-Version: 3.9.2
+Section: libs
+Homepage: http://xbmc.org
+
+Package: xbmc-audiodsp-template
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Audio DSP template for XBMC
+ This contains a template for audio DSP addons
+
+Package: xbmc-audiodsp-template-dbg
+Section: debug
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: debug symbols for Audio DSP template for XBMC
+ contains the debug symbols for xbmc-audiodsp-template
+
